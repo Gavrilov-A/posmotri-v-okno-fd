@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -49,3 +51,57 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.content {
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-rows: auto 1fr;
+  height: 534px;
+  align-content: end;
+  column-gap: 30px;
+  justify-content: center;
+  padding: 0 30px;
+  grid-template-areas: 
+    ". content__details"
+    "result content__details"
+    ;
+}
+
+.search-form {
+  display: flex;
+  justify-content:space-between;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+}
+
+.result__video {
+  width: 711px;
+  height: 386px;
+}
+
+.result {
+  height: 534px;
+  grid-area: result;
+}
+
+.content__details {
+  grid-area: content__details;
+}
+
+.title {
+  grid-area: title;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__list-container {
+  height: 300px;
+  overflow: scroll;
+}
+
+
