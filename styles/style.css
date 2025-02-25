@@ -61,7 +61,8 @@ ol {
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
+
 }
 
 .content {
@@ -206,7 +207,6 @@ ol {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-  line-clamp: 1;
   overflow: hidden;
 }
 
